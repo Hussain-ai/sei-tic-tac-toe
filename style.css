@@ -1,65 +1,60 @@
-/* Sets all elements to a zero padding and margin by defualt until changes below*/
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Itim', cursive;
+}
+.title {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+.player{
+    text-align: center;
 }
 .background {
-    height: 150vh;
+    background-color: linen;
+    height:100vh;
     padding-top: 1px;
 }
-/* Step 1 set title/header style */
-.title{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 5%;
+.display{
+text-align: center;
+font-size: 24px;
 }
-/* Step 2 set turn indicator style */
-.turn{
-    font-size:20px;
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-/* Step 3 set the container and tile styles */
-.container{
-    color: black;
+#container{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
-}
-.tile {
-    border: 1px solid;
-    min-width: 100px;
-    min-height: 100px;
-    display: flex;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
     justify-content: center;
+    align-content: center;
+    justify-items: center;
     align-items: center;
-    font-size: 50px;
-}
-/* Step 4 set player colors for turn indicator */
-.playerX {
-    color: green;
+    font-family: "Permanent Marker", cursive;
 }
 
-.playerO {
-    color: lightblue;
+.tile{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
 }
-/* Step 5 set controls/button style  */
-.controls {
+#status{
+    text-align: center;
+}
+#reset{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
-}
-.controls button {
-    padding: 8px;
-    border-radius: 8px;
+    margin-top: 1em;
     font-size: 20px;
-    margin-left: 16px;
-    cursor: pointer;
-    background-color: linen;
+}
+.reset-mid{
+ align-items: center; 
+ padding-left: 50%; 
 }
